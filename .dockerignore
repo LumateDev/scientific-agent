@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Виртуальное окружение
+venv/
+env/
+__pycache__/
+
+# Секреты
+.env
+.env.local
+
+# Результаты работы (монтируются как volumes)
+output/
+cache/
+logs/
+*.db
+*.db-journal
+
+# IDE
+.vscode/
+.idea/
+
+# Документация (не нужна в образе)
+README.md

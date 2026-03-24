@@ -1,0 +1,13 @@
+services:
+  sci-agent:
+    build: .
+    container_name: sci_agent
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./output:/app/output
+      - ./cache:/app/cache
+      - ./logs:/app/logs
+    ports:
+      - "5000:5000"
